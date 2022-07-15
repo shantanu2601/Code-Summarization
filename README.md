@@ -1,0 +1,4 @@
+# Code-Summarization
+A Transformer Based Approach for Source Code Summarization by Ahmad et al, 2020 https://arxiv.org/pdf/2005.00653.pdf which learns the code representations using self-attention mechanism and also uses relative encoding of source code tokens as described by Shaw et al, 2018 https://arxiv.org/pdf/1803.02155.pdf. <br/>For implementing the model, I make use of the [T5 model](https://huggingface.co/docs/transformers/model_doc/t5#transformers.T5ForConditionalGeneration) from HuggingFace since it is also based upon the relative position embeddings and helps reducing the boilerplate code.
+## Dataset
+The dataset used [LeClair's Funcom Java Function Parallel Corpus](http://leclair.tech/data/funcom/#tokdata), is a tokenized dataset consisting of 2.1 million Java function/documentation pairs. However, due to GPU constraints only 30,000 examples are used in the implementation.
